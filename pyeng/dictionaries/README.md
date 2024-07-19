@@ -1,0 +1,6 @@
+- mutable ordered data type
+- pairs of 'key:value'
+- values are accessible by key
+- entries in dictionary are stored in order they were added
+- key must be immutable object: number, string, tuple
+- value can be data of any type
