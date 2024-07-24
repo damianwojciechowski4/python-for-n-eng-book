@@ -72,9 +72,14 @@ trunk_template = [
     f"switchport trunk allowed vlan {vlans_ids}"
 ]
 
+print(f"interface {int_type}")
 
+if mode.strip()=="access":
+    print('\n'.join(access_template).format(vlans_ids))
+else:
+    print('\n'.join(trunk_template).format(vlans_ids))
 
-
+"""
 print(f"interface {int_type}")
 
 if mode.strip()=="access":
@@ -83,3 +88,5 @@ if mode.strip()=="access":
 else:
     for line in trunk_template:
         print(line)
+
+"""
